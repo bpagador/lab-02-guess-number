@@ -10,6 +10,32 @@
 </head>
 
 <body>
+    <Header> Guess a number! </Header>
+
+    <p> Choose a number between 0 and 25. You have up to 5 chances!</p>
+
+    <section id="main-section">
+        
+        <label for="number-guess"> Enter number: </label>
+        <input type="number" id="number-guess">
+        <br>
+        <input type="submit" class="button" id="submit-button">
+        <br>
+
+        <div class="feedback">
+            <span id="tries-left">5 tries left.</span>
+            <br>
+            <span id="guess-was"></span>
+        </div> 
+
+    </section>
+
+    <footer id="results-section">
+        <div id="high-low"></div>
+        <div id="win-lose"></div>
+        <input type="reset" class="button" id="reset-button">
+    </footer>
+
 
     <script type="module" src="app.js"></script>
 </body>
